@@ -3,7 +3,7 @@ res= []
 s = str(num)
 for i in range(k):
     first = i
-    last = i+k
+    last = len(s)-k+i
     x = s[first:last]
     res.append(x)
 print(min(res))
