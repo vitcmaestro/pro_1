@@ -18,5 +18,7 @@ def factor(lis):
 n,q = map(int,input().split())
 temp = list(map(int,input().split()))
 for i in range(q):
-    x,y = map(int,input().split())
-    print(factor(temp[x:y+1]))
+    t,u = map(int,input().split())
+    x = min(t,u)
+    y = max(t,u)
+    print(factor(temp[x-1:y]))
