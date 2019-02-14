@@ -16,6 +16,7 @@ def factor(lis):
             if(divisible(lis,j)):
                 return j
 n,q = map(int,input().split())
-for i in range(q+1):
-    temp = list(map(int,input().split()))
-    print(factor(temp))
+temp = list(map(int,input().split()))
+for i in range(q):
+    x,y = map(int,input().split())
+    print(factor(temp[x:y+1]))
