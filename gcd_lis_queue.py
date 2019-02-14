@@ -21,4 +21,4 @@ for i in range(q):
     t,u = map(int,input().split())
     x = min(t,u)
     y = max(t,u)
-    print(factor(temp[x-1:y]))
+    print(factor(temp[x-1:y]),"\n")
