@@ -3,4 +3,5 @@ ans =""
 for i in range(1,len(x)):
     if(x[i] > x[0]):
         ans = x[i:]
+        break
 print(ans)
