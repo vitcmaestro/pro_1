@@ -1,5 +1,5 @@
 n = int(input())
-x = 1
+x = 0
 y = str(bin(x))
 ans = []
 fin =[]
@@ -24,8 +24,8 @@ d = 0
 for i in res:
     for j in i:
         if(len(j) < n):
-            x= n-len(j)
-            y = "0"*x
+            m= n-len(j)
+            y = "0"*m
             j = y+j
         if(d == 0):
             print(j)
