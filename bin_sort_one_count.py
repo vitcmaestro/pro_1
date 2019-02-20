@@ -23,8 +23,8 @@ while(len(ans) >0 and z<=n):
 
 for i in res:
     for j in i:
-        if(len(j) == 1):
-            j = "00"+j
-        if(len(j) == 2):
-            j = "0"+j
+        if(len(j) < n):
+            x= n-len(j)
+            y = "0"*x
+            j = y+j
         print(j)
