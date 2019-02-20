@@ -21,14 +21,11 @@ while(len(ans) >0 and z<=n):
     res.append(fin)
     fin =[]
 d = 0
+print("0"*n)
 for i in res:
     for j in i:
         if(len(j) < n):
             m= n-len(j)
             y = "0"*m
             j = y+j
-        if(d == 0):
-            print(j)
-            d+=1
-        else:
-            print("\n"+j)
+        print("\n"+j)
