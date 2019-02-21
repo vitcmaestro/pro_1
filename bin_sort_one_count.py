@@ -28,4 +28,5 @@ for i in res:
             m= n-len(j)
             y = "0"*m
             j = y+j
-        print("\n"+j)
+            fin.append(j)
+print("\n".join(map(str,fin)))
